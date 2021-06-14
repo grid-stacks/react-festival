@@ -1,19 +1,16 @@
-import './App.css';
-import Hero from './components/Hero';
+import React from "react";
+import "./App.css";
+import { BrowserRouter, Switch, Route } from "react-router-dom";
+import Home from "./pages/Home";
 
-import Company from './components/Company';
-
-import CarouselComponent from './components/CarouselComponent';
-import Platform from './components/Platform';
-function App() {
-  return (
-    <div className='App'>
-      <Hero />
-      <Company />
-      <CarouselComponent />
-      <Platform />
-    </div>
-  );
-}
+const App = () => {
+    return (
+        <BrowserRouter>
+            <Switch>
+                <Route exact path="/" component={Home} />
+            </Switch>
+        </BrowserRouter>
+    );
+};
 
 export default App;
