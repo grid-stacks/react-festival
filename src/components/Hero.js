@@ -65,10 +65,10 @@ const Wrapper = styled.div`
       left: 0;
       right: 0;
       bottom: 0;
-      background-image: linear-gradient(
+      background: linear-gradient(
         to right,
-        rgba(253, 242, 215, 1),
-        rgba(220, 176, 124, 0.6)
+        rgba(254, 243, 216, 1),
+        rgba(235, 204, 162, 0.5)
       );
       z-index: 1;
     }

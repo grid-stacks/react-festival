@@ -17,8 +17,12 @@ const Company = () => {
   );
 };
 const Wrapper = styled.div`
-  margin-top: 2rem;
   text-align: center;
+  width: 95vw;
+
+  margin: 6rem auto;
+
+  max-width: 1160px;
   h2 {
     margin: 0;
   }
@@ -26,9 +30,7 @@ const Wrapper = styled.div`
     margin-top: 0;
   }
   .company {
-    width: 95vw;
-    margin: 0 auto;
-    max-width: 1160px;
+    padding-top: 3rem;
     display: flex;
     align-items: center;
     justify-content: space-between;

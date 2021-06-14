@@ -1,26 +1,55 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { ImQuotesRight } from 'react-icons/im';
-import { ImCircleRight } from 'react-icons/im';
-import { ImCircleLeft } from 'react-icons/im';
-import Carousel from 'react-elastic-carousel';
+
+import { MdKeyboardArrowLeft } from 'react-icons/md';
+import { MdKeyboardArrowRight } from 'react-icons/md';
 import styled from 'styled-components';
 import man from '../images/man.jpeg';
-const CarouselComponent = () => {
-  const settings = {
-    dots: false,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-  };
+import man2 from '../images/man2.jpeg';
 
+const data = [
+  {
+    img: `${man}`,
+    heading1: 'Experts Highly',
+    heading2: 'Recomanded us',
+    review: ` Testimonials or quotes from your customers are one of the most common forms of customer reviews. You’re most likely to find them on a company website. `,
+    heading3: 'Shanto',
+    heading4: 'Frontend Developer',
+  },
+  {
+    img: `${man2}`,
+    heading1: 'Experts Highly',
+    heading2: 'Recomanded us',
+    review: ` We will definitely use this app for our futere  customers in
+              the realstate and small business...!  Excellent solutions`,
+    heading3: 'sandro',
+    heading4: 'Seo Web Milan',
+  },
+];
+const CarouselComponent = () => {
+  const [index, setIndex] = useState(0);
+  const { img, heading1, heading2, heading3, heading4, review } = data[index];
+
+  const increase = () => {
+    setIndex(index + 1);
+    console.log(data.length);
+    if (index >= data.length - 1) {
+      setIndex(0);
+    }
+  };
+  const decrease = () => {
+    setIndex(index - 1);
+    if (index <= 0) {
+      setIndex(data.length - 1);
+    }
+  };
   return (
     <CarouselWapper>
       <Wrapper>
         <div className='container'>
           <div className='left'>
             <div className='img-container'>
-              <img src={man} alt='' />
+              <img src={img} alt='' />
             </div>
           </div>
           <div className='right'>
@@ -29,25 +58,22 @@ const CarouselComponent = () => {
                 <ImQuotesRight />
               </span>
               <span>
-                <h5>Experts Highly</h5>
-                <h4>Recomanded us</h4>
+                <h5>{heading1}</h5>
+                <h4>{heading2}</h4>
               </span>
             </div>
-            <p className='review'>
-              We will definitely use this app for our futere <br /> customers in
-              the realstate and small business...! <br /> Excellent solutions
-            </p>
+            <p className='review'>{review}</p>
             <div className='writer'>
-              <h4>sandro</h4>
-              <p>Seo Web Milan</p>
+              <h4>{heading3}</h4>
+              <p>{heading4}</p>
             </div>
           </div>
           <div className='carousel-btn'>
             <div className='left-btn'>
-              <ImCircleLeft />
+              <MdKeyboardArrowLeft onClick={decrease} />
             </div>
             <div className='right-btn'>
-              <ImCircleRight />
+              <MdKeyboardArrowRight onClick={increase} />
             </div>
           </div>
         </div>
@@ -60,6 +86,7 @@ const CarouselWapper = styled.div`
   padding: 1rem;
 `;
 const Wrapper = styled.div`
+  margin-top: 2rem;
   .container {
     position: relative;
     display: grid;
@@ -113,6 +140,7 @@ const Wrapper = styled.div`
     margin-top: 2rem;
     letter-spacing: 2.5px;
     position: relative;
+    padding-right: 1.2rem;
     ::before {
       content: '';
       height: 30px;
@@ -160,6 +188,7 @@ const Wrapper = styled.div`
       color: #515050;
       background-color: #e9e7ea;
       border-radius: 50%;
+      border: 2px solid #222;
     }
   }
 `;
