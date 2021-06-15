@@ -53,7 +53,7 @@ const Hero = () => {
 };
 const Wrapper = styled.div`
   .bg {
-    height: 100vh;
+    height: 104vh;
     background-image: url(${bg});
     background-size: 100% 100%;
     background-repeat: no-repeat;
