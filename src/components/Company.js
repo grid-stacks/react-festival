@@ -16,19 +16,15 @@ const Company = () => {
         </div>
         <div>
           <img src={sony} alt='' />
-          <span></span>
         </div>
         <div>
           <img src={zillow} alt='' />
-          <span></span>
         </div>
         <div>
           <img src={news} alt='' />
-          <span></span>
         </div>
         <div>
           <img src={archdaily} alt='' />
-          <span></span>
         </div>
       </div>
     </Wrapper>
@@ -56,17 +52,7 @@ const Wrapper = styled.div`
     justify-content: space-between;
     margin-bottom: 9rem;
     margin-top: 2rem;
-    div {
-      position: relative;
-      span {
-        height: 30px;
-        width: 2px;
-        position: absolute;
-        top: 0;
-        left: -50px;
-        background-color: #e4e4eb;
-      }
-    }
+
     img {
     }
   }
