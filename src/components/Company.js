@@ -1,6 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
 import sony from '../images/sony.PNG';
+import samsung from '../images/samsung.png';
+import archdaily from '../images/archdaily.png';
+import news from '../images/news.png';
+import zillow from '../images/zillow.png';
 const Company = () => {
   return (
     <Wrapper>
@@ -8,22 +12,22 @@ const Company = () => {
       <p>No lock-ins Total Freedom. 100,000 Clients can't be wrong</p>
       <div className='company'>
         <div>
-          <img src={sony} alt='' />
+          <img src={samsung} alt='' />
         </div>
         <div>
           <img src={sony} alt='' />
           <span></span>
         </div>
         <div>
-          <img src={sony} alt='' />
+          <img src={zillow} alt='' />
           <span></span>
         </div>
         <div>
-          <img src={sony} alt='' />
+          <img src={news} alt='' />
           <span></span>
         </div>
         <div>
-          <img src={sony} alt='' />
+          <img src={archdaily} alt='' />
           <span></span>
         </div>
       </div>
@@ -64,8 +68,6 @@ const Wrapper = styled.div`
       }
     }
     img {
-      width: 136px;
-      height: 24px;
     }
   }
 `;

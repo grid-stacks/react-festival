@@ -30,7 +30,10 @@ const Hero = () => {
             </ul>
           </div>
           <div className='button'>
-            <button className='btn signin-btn'>sign in</button>
+            <span>
+              <button className='btn signin-btn'></button>
+              <p>Sign In</p>
+            </span>
           </div>
         </nav>
         <HeroSection>
@@ -43,8 +46,14 @@ const Hero = () => {
             <span> 20,000+ </span> B usinesses
           </p>
           <div className='btn-container'>
-            <button className='btn trial-btn'>start a free trial</button>
-            <button className='btn demo-btn'>request demo</button>
+            <span>
+              <button className='btn trial-btn'></button>
+              <p>Start Free Trial</p>
+            </span>
+            <span>
+              <button className='btn demo-btn'></button>
+              <p>Request demo</p>
+            </span>
           </div>
         </HeroSection>
       </div>
@@ -150,16 +159,24 @@ const Wrapper = styled.div`
 
   .button {
     z-index: 9;
-  }
-  .signin-btn {
-    background-color: #fff;
-    color: #222;
-    border-radius: 0;
-    cursor: pinter;
-    padding: 0.8rem 1.2rem;
-    font-weight: 600;
+    position: relative;
 
-    margin-right: 1rem;
+    .signin-btn {
+      background-color: #fff;
+      margin-right: 1rem;
+      height: 46px;
+      width: 116px;
+    }
+    p {
+      position: absolute;
+      top: -10%;
+      left: 50%;
+      font-size: 16px;
+      font-weight: 600;
+      color: #222;
+      transform: translateX(-70%);
+      letter-spacing: 0px;
+    }
   }
 `;
 
@@ -210,14 +227,30 @@ const HeroSection = styled.div`
     margin-top: 1.5rem;
     display: flex;
     gap: 2rem;
-  }
-  .trial-btn {
-    background-color: #33b864;
-    padding: 0.8rem 3rem;
-  }
-  .demo-btn {
-    background-color: #222;
-    padding: 1rem 3rem;
+    span {
+      position: relative;
+    }
+    .trial-btn {
+      background-color: #33b864;
+      width: 262px;
+      height: 56px;
+    }
+    .demo-btn {
+      background-color: #222;
+      padding: 1rem 3rem;
+      width: 262px;
+      height: 56px;
+    }
+    p {
+      position: absolute;
+      top: 1%;
+      left: 50%;
+      font-size: 16px;
+      font-weight: 600;
+      color: #fff;
+      transform: translateX(-50%);
+      letter-spacing: 0px;
+    }
   }
 `;
 export default Hero;

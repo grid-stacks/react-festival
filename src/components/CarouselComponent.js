@@ -90,7 +90,7 @@ const Wrapper = styled.div`
   .container {
     position: relative;
     display: grid;
-    background-color: #ffe8b9;
+    background-color: #fff8ea;
     min-height: 482px;
     width: 90vw;
     max-width: 1140px;
