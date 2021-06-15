@@ -166,6 +166,7 @@ const Wrapper = styled.div`
       margin-right: 1rem;
       height: 46px;
       width: 116px;
+      cursor: pointer;
     }
     p {
       position: absolute;
@@ -174,7 +175,7 @@ const Wrapper = styled.div`
       font-size: 16px;
       font-weight: 600;
       color: #222;
-      transform: translateX(-70%);
+      transform: translateX(-67%);
       letter-spacing: 0px;
     }
   }
