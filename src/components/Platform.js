@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import camera1 from '../images/camera1.jpg';
+import camera from '../images/camera.png';
 const Platform = () => {
   return (
     <Wrapper>
@@ -36,8 +36,6 @@ const Wrapper = styled.div`
   h3 {
     text-align: center;
     padding: 2rem 0;
-    font-weight: 600;
-    letter-spacing: 2px;
   }
   .container {
     width: 95vw;
@@ -51,7 +49,7 @@ const Wrapper = styled.div`
     position: relative;
     height: 280px;
     width: 340px;
-    background-image: url(${camera1});
+    background-image: url(${camera});
     border-radius: 15px;
     background-size: cover;
     background-repeat: no-repeat;
@@ -70,7 +68,7 @@ const Wrapper = styled.div`
     display: flex;
     align-items: center;
     padding: 1.5rem;
-    letter-spacing: 2px;
+    font-weight: 600;
   }
   .button {
     position: absolute;

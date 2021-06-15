@@ -1,44 +1,72 @@
-import React from "react";
-import styled from "styled-components";
-import sony from "../images/sony.PNG";
+import React from 'react';
+import styled from 'styled-components';
+import sony from '../images/sony.PNG';
 const Company = () => {
-    return (
-        <Wrapper>
-            <h2>The affordable matterport Alternative the matter</h2>
-            <p>No lock-ins total freedom . 100000 Clienets can"t be worng</p>
-            <div className="company">
-                <img src={sony} alt="" />
-                <img src={sony} alt="" />
-                <img src={sony} alt="" />
-                <img src={sony} alt="" />
-                <img src={sony} alt="" />
-            </div>
-        </Wrapper>
-    );
+  return (
+    <Wrapper>
+      <h3>The Affordable Matterport Alternative The Matters</h3>
+      <p>No lock-ins Total Freedom. 100,000 Clients can't be wrong</p>
+      <div className='company'>
+        <div>
+          <img src={sony} alt='' />
+        </div>
+        <div>
+          <img src={sony} alt='' />
+          <span></span>
+        </div>
+        <div>
+          <img src={sony} alt='' />
+          <span></span>
+        </div>
+        <div>
+          <img src={sony} alt='' />
+          <span></span>
+        </div>
+        <div>
+          <img src={sony} alt='' />
+          <span></span>
+        </div>
+      </div>
+    </Wrapper>
+  );
 };
 const Wrapper = styled.div`
-    text-align: center;
-    width: 95vw;
+  text-align: center;
+  width: 95vw;
 
-    margin: 2rem auto 6rem;
+  margin: 2rem auto 6rem;
 
-    max-width: 1160px;
-    h2 {
-        margin: 0;
+  max-width: 1056px;
+  h3 {
+    margin: 2px;
+    font-size: 34px;
+    font-weight: 700;
+  }
+  p {
+    margin-top: 0;
+  }
+  .company {
+    padding-top: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 9rem;
+    margin-top: 2rem;
+    div {
+      position: relative;
+      span {
+        height: 30px;
+        width: 2px;
+        position: absolute;
+        top: 0;
+        left: -50px;
+        background-color: #e4e4eb;
+      }
     }
-    p {
-        margin-top: 0;
+    img {
+      width: 136px;
+      height: 24px;
     }
-    .company {
-        padding-top: 3rem;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        margin-bottom: 3rem;
-        margin-top: 2rem;
-        img {
-            width: 170px;
-        }
-    }
+  }
 `;
 export default Company;
