@@ -207,12 +207,13 @@ const HeroSection = styled.div`
     word-spacing: 5px;
   }
   .btn-container {
+    margin-top: 1.5rem;
     display: flex;
     gap: 2rem;
   }
   .trial-btn {
     background-color: #33b864;
-    padding: 0.8rem 2.5rem;
+    padding: 0.8rem 3rem;
   }
   .demo-btn {
     background-color: #222;
