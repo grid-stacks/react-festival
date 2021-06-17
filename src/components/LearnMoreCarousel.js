@@ -7,7 +7,7 @@ import c1 from '../images/c1.png';
 import c2 from '../images/c2.png';
 import c3 from '../images/c3.png';
 import daniel from '../images/daniel.png';
-import { BiChevronRight } from 'react-icons/bi';
+
 const LearnMoreCarousel = () => {
   const settings = {
     dots: false,
@@ -15,9 +15,26 @@ const LearnMoreCarousel = () => {
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 1,
-    '@media (max-width:600px)': {
-      slidesToShow: 1,
-    },
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ],
   };
   return (
     <Wrapper>
@@ -158,6 +175,7 @@ const Wrapper = styled.section`
   }
   .slider {
     .wrapper {
+      width: 95%;
       background-color: #fff;
       max-width: 378px;
       border-radius: 10px;

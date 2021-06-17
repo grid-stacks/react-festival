@@ -68,13 +68,13 @@ const CarouselComponent = () => {
               <p>{heading4}</p>
             </div>
           </div>
-          <div className='carousel-btn'>
-            <div className='left-btn'>
-              <MdKeyboardArrowLeft onClick={decrease} />
-            </div>
-            <div className='right-btn'>
-              <MdKeyboardArrowRight onClick={increase} />
-            </div>
+        </div>
+        <div className='carousel-btn'>
+          <div className='left-btn'>
+            <MdKeyboardArrowLeft onClick={decrease} />
+          </div>
+          <div className='right-btn'>
+            <MdKeyboardArrowRight onClick={increase} />
           </div>
         </div>
       </Wrapper>
@@ -86,6 +86,7 @@ const CarouselWrapper = styled.div`
   padding: 1rem;
 `;
 const Wrapper = styled.div`
+  position: relative;
   margin-top: 2rem;
   .container {
     position: relative;
@@ -103,6 +104,11 @@ const Wrapper = styled.div`
   }
   .left {
     position: relative;
+    @media (max-width: 900px) {
+      display: flex;
+
+      justify-content: center;
+    }
   }
   .img-container {
     position: absolute;
@@ -112,6 +118,12 @@ const Wrapper = styled.div`
     height: 400px;
     width: 250px;
     border-radius: 99px;
+    @media (max-width: 900px) {
+      position: relative;
+      display: block;
+      top: 0%;
+      left: 0%;
+    }
     img {
       height: 100%;
       width: 100%;

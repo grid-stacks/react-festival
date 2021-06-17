@@ -9,6 +9,7 @@ import CreatorFeatures from '../components/CreatorFeatures';
 import CustomizeTour from '../components/CustomizeTour';
 import LearnMoreCarousel from '../components/LearnMoreCarousel';
 import JoinTours from '../components/JoinTours';
+import WebinarTraining from '../components/WebinarTrainig';
 const Home = () => {
   return (
     <div className='App'>
@@ -22,6 +23,7 @@ const Home = () => {
       <CustomizeTour />
       <LearnMoreCarousel />
       <JoinTours />
+      <WebinarTraining />
     </div>
   );
 };

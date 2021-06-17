@@ -97,7 +97,6 @@ const Footer = () => {
   );
 };
 const Wrapper = styled.footer`
-  margin-top: 100px;
   background-color: #262525;
   .section {
     max-width: 1217px;

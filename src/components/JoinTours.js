@@ -46,11 +46,15 @@ const JoinTours = () => {
   );
 };
 const Wrapper = styled.section`
+  overflow: hidden;
   .container {
     min-height: 870px;
     display: grid;
-    margin: 100px 0;
-    /* align-items: center; */
+
+    margin: 100px auto;
+    width: 100vw;
+    max-width: 1366px;
+
     @media (min-width: 1100px) {
       grid-template-columns: 615px 1fr;
     }

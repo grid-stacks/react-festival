@@ -89,7 +89,7 @@ const Wrapper = styled.div`
   .curve {
     width: 100%;
     height: 65px;
-    background-color: #f8fafc;
+    background-color: #fff;
     border-radius: 0 0 50% 50%/0 0 100% 100%;
     position: absolute;
     bottom: 0;
