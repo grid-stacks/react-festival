@@ -30,30 +30,21 @@ const Hero = () => {
             </ul>
           </div>
           <div className='button'>
-            <span>
-              <button className='btn signin-btn'></button>
-              <p>Sign In</p>
-            </span>
+            <button className='btn signin-btn'>Sign In</button>
           </div>
         </nav>
         <HeroSection>
           <p className='create'>create & share</p>
-          <h2>
+          <h1>
             fastest virtual <br /> tour software
-          </h2>
+          </h1>
           <p className='trust'>
             Trusted by <span> 15 Million </span> creators and{' '}
             <span> 20,000+ </span> B usinesses
           </p>
           <div className='btn-container'>
-            <span>
-              <button className='btn trial-btn'></button>
-              <p>Start Free Trial</p>
-            </span>
-            <span>
-              <button className='btn demo-btn'></button>
-              <p>Request demo</p>
-            </span>
+            <button className='btn trial-btn'>Start Free Trial</button>
+            <button className='btn demo-btn'>Request demo</button>
           </div>
         </HeroSection>
       </div>
@@ -159,7 +150,6 @@ const Wrapper = styled.div`
 
   .button {
     z-index: 9;
-    position: relative;
 
     .signin-btn {
       background-color: #fff;
@@ -167,16 +157,8 @@ const Wrapper = styled.div`
       height: 46px;
       width: 116px;
       cursor: pointer;
-    }
-    p {
-      position: absolute;
-      top: -10%;
-      left: 50%;
-      font-size: 16px;
-      font-weight: 600;
-      color: #222;
-      transform: translateX(-67%);
-      letter-spacing: 0px;
+      color: #000;
+      clip-path: polygon(10% 0, 100% 0, 90% 100%, 0 100%);
     }
   }
 `;
@@ -219,38 +201,28 @@ const HeroSection = styled.div`
     }
   }
 
-  h2 {
+  h1 {
     margin: 0;
-    font-size: 46px;
+
     word-spacing: 5px;
+    line-height: 65px;
   }
   .btn-container {
     margin-top: 1.5rem;
     display: flex;
     gap: 2rem;
-    span {
-      position: relative;
-    }
+
     .trial-btn {
       background-color: #33b864;
       width: 262px;
       height: 56px;
+      clip-path: polygon(10% 0, 100% 0, 90% 100%, 0 100%);
     }
     .demo-btn {
       background-color: #222;
-      padding: 1rem 3rem;
       width: 262px;
       height: 56px;
-    }
-    p {
-      position: absolute;
-      top: 1%;
-      left: 50%;
-      font-size: 16px;
-      font-weight: 600;
-      color: #fff;
-      transform: translateX(-50%);
-      letter-spacing: 0px;
+      clip-path: polygon(10% 0, 100% 0, 90% 100%, 0 100%);
     }
   }
 `;

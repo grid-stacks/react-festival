@@ -48,6 +48,8 @@ const Wrapper = styled.div`
   .company {
     padding-top: 4rem;
     display: flex;
+    flex-wrap: Wrap;
+    gap: 1rem;
     align-items: center;
     justify-content: space-between;
     margin-bottom: 9rem;
