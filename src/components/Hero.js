@@ -158,7 +158,6 @@ const Wrapper = styled.div`
       width: 116px;
       cursor: pointer;
       color: #000;
-      clip-path: polygon(10% 0, 100% 0, 90% 100%, 0 100%);
     }
   }
 `;
@@ -216,13 +215,11 @@ const HeroSection = styled.div`
       background-color: #33b864;
       width: 262px;
       height: 56px;
-      clip-path: polygon(10% 0, 100% 0, 90% 100%, 0 100%);
     }
     .demo-btn {
       background-color: #222;
       width: 262px;
       height: 56px;
-      clip-path: polygon(10% 0, 100% 0, 90% 100%, 0 100%);
     }
   }
 `;

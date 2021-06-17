@@ -131,14 +131,12 @@ const Wrapper = styled.footer`
       background-color: #33b864;
       width: 262px;
       height: 56px;
-      clip-path: polygon(10% 0, 100% 0, 90% 100%, 0 100%);
     }
     .demo-btn {
       background-color: #fff;
       width: 262px;
       color: #262525;
       height: 56px;
-      clip-path: polygon(10% 0, 100% 0, 90% 100%, 0 100%);
     }
   }
   hr {
