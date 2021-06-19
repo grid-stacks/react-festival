@@ -184,7 +184,28 @@ ul {
   font-weight: 500;
   font-family: 'Spartan', sans-serif;
 }
+
 .btn:hover {
+  background: var(--primary-700);
+  box-shadow: var(--shadow-3);
+}
+.icon-btn {
+  cursor: pointer;
+  color: var(--white);
+  background: var(--primary-500);
+  border: transparent;
+  border-radius: 0;
+  letter-spacing: var(--letterSpacing);
+  box-shadow: var(--shadow-1);
+  transition: var(--transtion);
+  text-transform: capitalize;
+  display: inline-block;
+
+  font-size: 16px;
+  font-weight: 500;
+  font-family: 'Spartan', sans-serif;
+}
+.icon-btn:hover {
   background: var(--primary-700);
   box-shadow: var(--shadow-3);
 }
