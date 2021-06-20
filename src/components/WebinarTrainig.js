@@ -89,7 +89,7 @@ const Wrapper = styled.section`
     padding-left: 2rem;
     max-width: 1300px;
     margin: 0 auto;
-    @media (max-weight: 1000px) {
+    @media (max-width: 1000px) {
       padding-left: 0rem;
     }
     h3 {
@@ -159,6 +159,9 @@ const Wrapper = styled.section`
     background-color: #e4e4eb;
     border: 2px solid #222;
     color: #222;
+    @media (max-width: 900px) {
+      top: -7%;
+    }
   }
   .slick-prev {
     left: 15%;
@@ -171,6 +174,9 @@ const Wrapper = styled.section`
       align-items: center;
       justify-content: center;
     }
+    @media (max-width: 900px) {
+      left: 30%;
+    }
   }
   .slick-next {
     left: 20%;
@@ -182,6 +188,9 @@ const Wrapper = styled.section`
       display: flex;
       align-items: center;
       justify-content: center;
+    }
+    @media (max-width: 900px) {
+      left: 50%;
     }
   }
 `;

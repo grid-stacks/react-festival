@@ -62,6 +62,7 @@ const Accordion = styled.div`
     align-items: center;
     justify-content: space-between;
     margin: 0;
+    gap: 1rem;
   }
   .content {
     transition: 0.3s;

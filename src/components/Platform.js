@@ -46,6 +46,9 @@ const Wrapper = styled.div`
     gap: 1.5rem;
     align-items: center;
     justify-content: space-between;
+    @media (max-width: 800px) {
+      justify-content: space-around;
+    }
   }
   .single {
     position: relative;

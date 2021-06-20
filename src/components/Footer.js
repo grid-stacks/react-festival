@@ -154,6 +154,9 @@ const Wrapper = styled.footer`
     gap: 1.5rem;
     align-items: center;
     justify-content: space-between;
+    @media (max-width: 600px) {
+      justify-content: space-around;
+    }
     margin-top: 55px;
     margin-bottom: 35px;
     .heading {
@@ -180,8 +183,14 @@ const Wrapper = styled.footer`
       align-items: center;
       gap: 2.5rem;
       margin-left: 0.6rem;
+      @media (max-width: 600px) {
+        justify-content: center;
+      }
     }
     .links {
+      @media (max-width: 600px) {
+        text-align: center;
+      }
       h4 {
         color: #fff;
         font-size: 24px;
@@ -197,6 +206,12 @@ const Wrapper = styled.footer`
       }
     }
     .contact {
+      @media (max-width: 600px) {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+      }
       h4 {
         color: #fff;
         font-size: 24px;

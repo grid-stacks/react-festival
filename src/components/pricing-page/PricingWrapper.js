@@ -213,9 +213,9 @@ const Wrapper = styled.div`
   margin: 0 auto;
   margin-bottom: 30px;
   max-width: 1251px;
+  min-width: 1000px;
   table {
     width: 100%;
-
     border-collapse: collapse;
   }
 
@@ -224,11 +224,8 @@ const Wrapper = styled.div`
     display: grid;
     align-items: center;
     justify-items: space-between;
-
     gap: 2rem;
-    @media (min-width: 1100px) {
-      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    }
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   }
   th {
     display: flex;

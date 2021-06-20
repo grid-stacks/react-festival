@@ -120,7 +120,7 @@ const Wrapper = styled.div`
         width: 100%;
         box-shadow: var(--shadow-2);
         border-radius: 10px;
-        padding: 0 1.5rem;
+        padding: 1rem 1.5rem;
       }
     }
 
@@ -128,6 +128,10 @@ const Wrapper = styled.div`
       display: flex;
       align-items: center;
       justify-content: space-between;
+      gap: 1rem;
+      @media (max-width: 500px) {
+        flex-direction: column;
+      }
       .show-logo {
         display: flex;
         align-items: center;
@@ -148,6 +152,7 @@ const Wrapper = styled.div`
     .upper-middle {
       display: flex;
       align-items: center;
+      flex-wrap: wrap;
       gap: 1rem;
       margin: 30px 0;
       .active {
@@ -158,6 +163,10 @@ const Wrapper = styled.div`
       display: flex;
       align-items: center;
       justify-content: space-between;
+      gap: 1rem;
+      @media (max-width: 500px) {
+        flex-direction: column;
+      }
       article {
         display: flex;
         align-items: center;

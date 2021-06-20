@@ -84,7 +84,11 @@ const Wrapper = styled.section`
     margin-top: 60px;
     display: flex;
     flex-wrap: wrap;
+    gap: 1rem;
     justify-content: space-between;
+    @media (max-width: 900px) {
+      justify-content: space-around;
+    }
   }
   .single {
     max-width: 232px;

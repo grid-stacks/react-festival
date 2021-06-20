@@ -71,21 +71,33 @@ const Wrapper = styled.section`
         position: absolute;
         top: 15%;
         left: 20%;
+        @media (max-width: 1100px) {
+          display: none;
+        }
       }
       .top2 {
         position: absolute;
         top: 20%;
         right: 10%;
+        @media (max-width: 1100px) {
+          display: none;
+        }
       }
       .bottom1 {
         position: absolute;
         bottom: 20%;
         left: 10%;
+        @media (max-width: 1100px) {
+          display: none;
+        }
       }
       .bottom2 {
         position: absolute;
         bottom: 10%;
         right: 10%;
+        @media (max-width: 1100px) {
+          display: none;
+        }
       }
     }
     .right {
@@ -97,7 +109,7 @@ const Wrapper = styled.section`
       display: flex;
       align-items: center;
       justify-content: center;
-      @media (max-width: 1000px) {
+      @media (max-width: 1251px) {
         background-image: none;
       }
     }
@@ -115,6 +127,9 @@ const Wrapper = styled.section`
         background-color: #262525;
         margin-top: 50px;
         margin-left: 30px;
+        @media (max-width: 600px) {
+          margin-left: 0px;
+        }
       }
     }
   }
