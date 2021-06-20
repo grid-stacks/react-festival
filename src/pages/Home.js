@@ -4,7 +4,7 @@ import Company from '../components/Company';
 import Hero from '../components/Hero';
 import Platform from '../components/Platform';
 import Embeded from '../components/Embeded';
-import VirtualSettings from '../components/VirtualSettings';
+
 import CreatorFeatures from '../components/CreatorFeatures';
 import CustomizeTour from '../components/CustomizeTour';
 import LearnMoreCarousel from '../components/LearnMoreCarousel';
@@ -18,7 +18,7 @@ const Home = () => {
       <CarouselComponent />
       <Platform />
       <Embeded />
-      <VirtualSettings />
+
       <CreatorFeatures />
       <CustomizeTour />
       <LearnMoreCarousel />

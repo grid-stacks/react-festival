@@ -1,7 +1,16 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styled from 'styled-components';
 import image1 from '../images/Image1.png';
+
 const CustomizeTour = () => {
+  const [active, setActive] = useState({
+    tour1: false,
+    tour2: false,
+    tour3: false,
+    tour4: false,
+    tour5: false,
+    tour6: false,
+  });
   return (
     <Wrapper className='section'>
       <div className='container'>
@@ -12,14 +21,58 @@ const CustomizeTour = () => {
             Android and iOS.
           </p>
           <div className='btn-container'>
-            <button className='btn player-btn'>Virtual Reality player</button>
-            <button className='btn player-btn active'>
+            <button
+              className={
+                active.tour1 ? 'btn player-btn active' : 'btn player-btn'
+              }
+              onClick={() => setActive({ tour1: true })}
+            >
               Virtual Reality player
             </button>
-            <button className='btn player-btn'>Virtual Reality player</button>
-            <button className='btn player-btn'>Virtual Reality player</button>
-            <button className='btn player-btn'>Virtual Reality player</button>
-            <button className='btn player-btn'>Virtual Reality player</button>
+
+            <button
+              className={
+                active.tour2 ? 'btn player-btn active' : 'btn player-btn'
+              }
+              onClick={() => setActive({ tour2: true })}
+            >
+              Virtual Reality player
+            </button>
+
+            <button
+              className={
+                active.tour3 ? 'btn player-btn active' : 'btn player-btn'
+              }
+              onClick={() => setActive({ tour3: true })}
+            >
+              Virtual Reality player
+            </button>
+
+            <button
+              className={
+                active.tour4 ? 'btn player-btn active' : 'btn player-btn'
+              }
+              onClick={() => setActive({ tour4: true })}
+            >
+              Virtual Reality player
+            </button>
+
+            <button
+              className={
+                active.tour5 ? 'btn player-btn active' : 'btn player-btn'
+              }
+              onClick={() => setActive({ tour5: true })}
+            >
+              Virtual Reality player
+            </button>
+            <button
+              className={
+                active.tour6 ? 'btn player-btn active' : 'btn player-btn'
+              }
+              onClick={() => setActive({ tour6: true })}
+            >
+              Virtual Reality player
+            </button>
           </div>
         </div>
         <div className='img-container'>
