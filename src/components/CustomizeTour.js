@@ -4,7 +4,7 @@ import image1 from '../images/Image1.png';
 
 const CustomizeTour = () => {
   const [active, setActive] = useState({
-    tour1: false,
+    tour1: true,
     tour2: false,
     tour3: false,
     tour4: false,

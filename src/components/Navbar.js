@@ -21,12 +21,14 @@ const Navbar = () => {
               <Link to='/about'>About Us</Link>
             </li>
             <li>
-              <Link to='/'>Blog</Link>
+              <Link to='/blog'>Blog</Link>
             </li>
           </ul>
         </div>
         <div className='button'>
-          <button className='btn signin-btn'>Sign In</button>
+          <Link to='sign-in'>
+            <button className='btn signin-btn'>Sign In</button>
+          </Link>
         </div>
       </nav>
     </Wrapper>
