@@ -33,6 +33,7 @@ const HeroBlog = () => {
 const Wrapper = styled.section`
   display: grid;
   position: relative;
+  margin-bottom: 200px;
   .image-container {
     width: 95%;
     max-width: 1099px;
@@ -46,10 +47,18 @@ const Wrapper = styled.section`
     box-shadow: var(--shadow-2);
     display: grid;
     align-items: center;
+    background-color: #fff;
     gap: 2rem 2.5rem;
     padding: 1.5rem;
     margin: 2rem auto;
     border-radius: 10px;
+    @media (min-width: 1060px) {
+      position: absolute;
+      bottom: -30%;
+      left: -3%;
+      z-index: 2;
+    }
+
     @media (min-width: 960px) {
       grid-template-columns: 1fr 1fr;
     }
