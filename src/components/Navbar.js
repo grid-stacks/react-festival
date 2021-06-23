@@ -45,6 +45,7 @@ const Navbar = () => {
             <Link to='/'>
               <img src={logo} alt='' />
             </Link>
+
             <button className='btn bar' onClick={() => setShow(true)}>
               <GoThreeBars />
             </button>
@@ -161,7 +162,7 @@ const MobileNav = styled.nav`
     }
   }
   .heading {
-    width: 95vw;
+    width: 90vw;
     position: relative;
     z-index: 99999;
     max-width: 1200px;
@@ -169,10 +170,16 @@ const MobileNav = styled.nav`
     align-items: center;
     justify-content: space-between;
     margin: 0 auto;
+    a {
+      img {
+        margin-left: 1rem;
+      }
+    }
     .bar {
-      background-color: #222;
-      color: #fff;
-      padding: 0.3rem 0.5rem;
+      background-color: transparent;
+      box-shadow: none;
+      color: #222;
+      font-size: 35px;
       clip-path: none;
     }
   }

@@ -18,6 +18,13 @@ const SignUpWrapper = () => {
             <Link to='/'>Go back to HomePage</Link>
           </p>
         </div>
+
+        <div className='btn-container mobile-signup'>
+          <Link to='sign-in'>
+            <button className='btn signup-btn'>Go Sign In</button>
+          </Link>
+        </div>
+
         <div className='dots'>
           <img src={additional} alt='' />
         </div>
@@ -100,6 +107,20 @@ const Wrapper = styled.section`
     top: 20px;
     right: 20px;
     z-index: 10;
+  }
+  .mobile-signup {
+    top: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: none;
+    @media (max-width: 1099px) {
+      display: block;
+    }
+    @media (min-width: 500px) {
+      top: 35px;
+      right: 100%;
+      margin-left: 2rem;
+    }
   }
   .signup-btn {
     height: 46px;
@@ -191,6 +212,11 @@ const Wrapper = styled.section`
     background-color: #222;
     color: #fff;
     font-size: 14px;
+    @media (max-width: 1099px) {
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
   }
 `;
 export default SignUpWrapper;

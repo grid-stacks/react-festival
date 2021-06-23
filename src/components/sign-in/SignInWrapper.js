@@ -18,6 +18,13 @@ const SignInWrapper = () => {
             <Link to='/'>Go back to HomePage</Link>
           </p>
         </div>
+
+        <div className='btn-container mobile-signup'>
+          <Link to='sign-up'>
+            <button className='btn signup-btn'>Sign Up</button>
+          </Link>
+        </div>
+
         <div className='dots'>
           <img src={additional} alt='' />
         </div>
@@ -66,6 +73,7 @@ const Wrapper = styled.section`
     display: flex;
     align-items: center;
     gap: 1.5rem;
+    flex-wrap: wrap;
     p {
       a {
         color: #262525;
@@ -73,8 +81,12 @@ const Wrapper = styled.section`
     }
   }
   .image {
+    display: none;
     position: relative;
     min-height: 768px;
+    @media (min-width: 1100px) {
+      display: block;
+    }
     ::after {
       content: '';
       position: absolute;
@@ -99,6 +111,20 @@ const Wrapper = styled.section`
     top: 20px;
     right: 20px;
     z-index: 10;
+  }
+  .mobile-signup {
+    top: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: none;
+    @media (max-width: 1099px) {
+      display: block;
+    }
+    @media (min-width: 500px) {
+      top: 35px;
+      right: 100%;
+      margin-left: 2rem;
+    }
   }
   .signup-btn {
     height: 46px;
