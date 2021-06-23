@@ -10,7 +10,9 @@ const SignUpWrapper = () => {
       <div className='left'>
         <div className='heading'>
           <div className='logo'>
-            <img src={logo} alt='' />
+            <Link to='/'>
+              <img src={logo} alt='' />
+            </Link>
           </div>
           <p>
             <Link to='/'>Go back to HomePage</Link>

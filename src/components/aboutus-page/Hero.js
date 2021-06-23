@@ -14,9 +14,13 @@ const Wrapper = styled.div`
   margin: 100px auto;
   h1 {
     margin: 0;
-
     word-spacing: 5px;
     line-height: 65px;
+    @media (max-width: 600px) {
+      font-size: 24px;
+      word-spacing: 2px;
+      line-height: 45px;
+    }
   }
 `;
 export default Hero;

@@ -60,6 +60,9 @@ const Middle1 = () => {
 };
 const Wrapper = styled.div`
   margin-bottom: 190px;
+  @media (max-width: 999px) {
+    margin-bottom: 30px;
+  }
   position: relative;
   .container {
     position: relative;

@@ -180,6 +180,10 @@ const Wrapper = styled.div`
       justify-content: space-between;
       margin-top: 40px;
       flex-wrap: wrap;
+      @media (max-width: 600px) {
+        justify-content: center;
+      }
+
       .pano {
         height: 76px;
         width: 256px;

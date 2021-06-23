@@ -77,14 +77,21 @@ const Wrapper = styled.div`
 `;
 
 const HeroSection = styled.div`
-  height: 60vh;
+  min-height: 50vh;
   display: flex;
-  margin-left: 12rem;
   flex-direction: column;
   gap: 1rem;
   justify-content: center;
   z-index: 10;
+  width: 95vw;
+  max-width: 600px;
+  margin: 0 auto;
+
+  margin-top: -3rem;
   position: relative;
+  @media (max-width: 799px) {
+    margin-top: 0rem;
+  }
   .create {
     margin-bottom: 5px;
     letter-spacing: 4px;
@@ -92,6 +99,10 @@ const HeroSection = styled.div`
     margin-left: 6.7rem;
     position: relative;
     text-transform: capitalize;
+    @media (max-width: 600px) {
+      font-size: 12px;
+      margin-left: 6.7rem;
+    }
     ::before {
       content: '';
       height: 2px;
@@ -106,34 +117,59 @@ const HeroSection = styled.div`
   .trust {
     font-size: 16px;
     margin-bottom: 20px;
+    @media (max-width: 600px) {
+      font-size: 14px;
+      margin: 0;
+    }
     span {
       color: #33b864;
       font-size: 20px;
       font-weight: 700;
       margin: 0 2px;
+      @media (max-width: 600px) {
+        font-size: 14px;
+      }
     }
   }
 
   h1 {
     margin: 0;
-
     word-spacing: 5px;
     line-height: 65px;
+    @media (max-width: 600px) {
+      font-size: 20px;
+      line-height: 40px;
+    }
   }
   .btn-container {
     margin-top: 1.5rem;
     display: flex;
     gap: 2rem;
+    @media (max-width: 400px) {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-top: 0.5rem;
+      gap: 1rem;
+    }
 
     .trial-btn {
       background-color: #33b864;
       width: 262px;
       height: 56px;
+      @media (max-width: 600px) {
+        width: 200px;
+        height: 46px;
+      }
     }
     .demo-btn {
       background-color: #222;
       width: 262px;
       height: 56px;
+      @media (max-width: 600px) {
+        width: 200px;
+        height: 46px;
+      }
     }
   }
 `;

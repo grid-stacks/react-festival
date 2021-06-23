@@ -235,9 +235,15 @@ const Wrapper = styled.section`
     background-color: #e4e4eb;
     border: 2px solid #222;
     color: #222;
+    @media (max-width: 900px) {
+      top: -7%;
+    }
   }
   .slick-prev {
     left: 65%;
+    @media (max-width: 900px) {
+      left: 30%;
+    }
     :before {
       font-family: FontAwesome;
       content: '\f104';
@@ -250,6 +256,9 @@ const Wrapper = styled.section`
   }
   .slick-next {
     left: 72%;
+    @media (max-width: 900px) {
+      left: 50%;
+    }
     :before {
       font-family: FontAwesome;
       content: '\f105';

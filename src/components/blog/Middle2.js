@@ -62,6 +62,9 @@ const Middle2 = () => {
 const Wrapper = styled.div`
   margin-bottom: 190px;
   position: relative;
+  @media (max-width: 999px) {
+    margin-bottom: 30px;
+  }
   .container {
     min-height: 470px;
     display: grid;
@@ -74,6 +77,9 @@ const Wrapper = styled.div`
   }
   .image {
     justify-self: end;
+    @media (max-width: 999px) {
+      justify-self: center;
+    }
     img {
       max-width: 100%;
     }
@@ -81,6 +87,9 @@ const Wrapper = styled.div`
   .content {
     margin-top: 3rem;
     max-width: 455px;
+    @media (max-width: 999px) {
+      justify-self: center;
+    }
     h3 {
       line-height: 55px;
     }

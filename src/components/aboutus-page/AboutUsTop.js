@@ -38,7 +38,7 @@ const AboutUsTop = () => {
 };
 const Wrapper = styled.div`
   display: grid;
-  gap: 0 2rem;
+  gap: 2rem;
   margin-bottom: 100px;
   align-items: center;
   @media (min-width: 1100px) {
@@ -54,8 +54,11 @@ const Wrapper = styled.div`
     .about-btn {
       padding: 1rem 3rem;
       background-color: #33b864;
-
       margin-top: 55px;
+      @media (max-width: 600px) {
+        padding: 0.8rem 1.5rem;
+        font-size: 12px;
+      }
     }
   }
   .container {

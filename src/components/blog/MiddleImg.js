@@ -10,6 +10,9 @@ const MiddleImg = () => {
 };
 const Middle = styled.section`
   margin-bottom: 100px;
+  @media (max-width: 900px) {
+    margin-bottom: 0;
+  }
   img {
     width: 100%;
   }

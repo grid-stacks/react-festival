@@ -31,6 +31,9 @@ const Wrapper = styled.section`
   background-color: #ffe8b9;
   min-height: 470px;
   margin-top: 250px;
+  @media (max-width: 1060px) {
+    margin-top: 30px;
+  }
   margin-bottom: 125px;
   .section {
     min-height: 470px;

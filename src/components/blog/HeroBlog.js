@@ -34,6 +34,9 @@ const Wrapper = styled.section`
   display: grid;
   position: relative;
   margin-bottom: 200px;
+  @media (max-width: 999px) {
+    margin-bottom: 0px;
+  }
   .image-container {
     width: 95%;
     max-width: 1099px;

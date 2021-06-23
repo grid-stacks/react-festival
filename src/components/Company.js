@@ -41,6 +41,9 @@ const Wrapper = styled.div`
     margin: 2px;
     font-size: 34px;
     font-weight: 700;
+    @media (max-width: 600px) {
+      font-size: 24px;
+    }
   }
   p {
     margin-top: 0;
@@ -54,6 +57,10 @@ const Wrapper = styled.div`
     justify-content: space-between;
     margin-bottom: 9rem;
     margin-top: 2rem;
+    @media (max-width: 600px) {
+      justify-content: space-around;
+      gap: 2rem;
+    }
 
     img {
     }

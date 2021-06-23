@@ -11,7 +11,9 @@ const Navbar = () => {
       <div className='wrapper'>
         <nav>
           <div className='logo'>
-            <img src={logo} alt='' />
+            <Link to='/'>
+              <img src={logo} alt='' />
+            </Link>
           </div>
           <div className='nav-links'>
             <ul>
@@ -40,7 +42,9 @@ const Navbar = () => {
       <MobileNav>
         <div className='mobile-wrapper'>
           <div className='heading'>
-            <img src={logo} alt='' />
+            <Link to='/'>
+              <img src={logo} alt='' />
+            </Link>
             <button className='btn bar' onClick={() => setShow(true)}>
               <GoThreeBars />
             </button>
@@ -48,21 +52,26 @@ const Navbar = () => {
           {show && (
             <div className='mobile-links'>
               <ul>
-                <li>
+                <li onClick={() => setShow(false)}>
                   <Link to='/'>Home</Link>
                 </li>
-                <li>
+                <li onClick={() => setShow(false)}>
                   <Link to='/pricing'>Pricing</Link>
                 </li>
-                <li>
+                <li onClick={() => setShow(false)}>
                   <Link to='/about'>About Us</Link>
                 </li>
-                <li>
+                <li onClick={() => setShow(false)}>
                   <Link to='/blog'>Blog</Link>
                 </li>
                 <li>
                   <Link to='sign-in'>
-                    <button className='btn signin-btn'>Sign In</button>
+                    <button
+                      className='btn signin-btn'
+                      onClick={() => setShow(false)}
+                    >
+                      Sign In
+                    </button>
                   </Link>
                 </li>
               </ul>
@@ -189,7 +198,7 @@ const MobileNav = styled.nav`
     overflow: hidden;
     position: fixed;
     height: 100%;
-    width: 100%;
+    width: 100vw;
     background-color: #222;
     z-index: 99999;
     color: #fff;
