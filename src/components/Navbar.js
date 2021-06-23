@@ -197,7 +197,7 @@ const MobileNav = styled.nav`
   .mobile-links {
     overflow: hidden;
     position: fixed;
-    height: 100%;
+    height: 100vh;
     width: 100vw;
     background-color: #222;
     z-index: 99999;
