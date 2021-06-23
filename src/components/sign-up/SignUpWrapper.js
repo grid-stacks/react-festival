@@ -127,6 +127,12 @@ const Wrapper = styled.section`
     width: 116px;
     background: #fff;
     color: #222;
+    @media (max-width: 1099px) {
+      color: #fff;
+      background: #222;
+      font-size: 12px;
+      height: 40px;
+    }
   }
   .dots {
     position: absolute;
